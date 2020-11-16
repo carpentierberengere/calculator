@@ -31,10 +31,10 @@ egal.addEventListener("click", function(){
 const operations= ["+","-","*",":"]
 
 for (let i=0; i<= operations.length-1;i++) {
-    const op = document.createElement("button");
-    op.textContent = operations[i];
+    const ope = document.createElement("button");
+    ope.textContent = operations[i];
     main.appendChild(op);
-    op.addEventListener("click", function () {
+    ope.addEventListener("click", function () {
         screen.textContent += operations[i];
     });
 }
