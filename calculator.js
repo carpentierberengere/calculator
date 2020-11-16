@@ -20,10 +20,10 @@ for (let i = 0; i <= 9; i++) {
     });
 }
 
-const c = document.createElement("button");
-c.textContent = "C";
-main.appendChild(c);
-c.addEventListener("click", function(){
+const clear = document.createElement("button");
+clear.textContent = "C";
+main.appendChild(clear);
+clear.addEventListener("click", function(){
     screen.textContent = "";
 });
 
