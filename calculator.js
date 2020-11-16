@@ -19,7 +19,7 @@ const multiplication = document.createElement("button");
 multiplication.textContent.Content = "*";
 body.appendChild(multiplication);
 
-for(let i = 0; i <= 10; i++) {
+for(let i = 0; i <= 9; i++) {
     const button = document.createElement("button");
     button.textContent=i;
 
