@@ -1,34 +1,46 @@
-//const calculator = {
-//    displayValue : '0',
-//    firstOperand : null,
-//    waitingFotSecondOperand : false,
-//    operator: null
-
 const body = document.querySelector("body");
+
 const screen = document.createElement("div");
 
-const addition = document.createElement("button");
-addition.textContent.Content = "+";
-body.appendChild(addition);
 
-const division = document.createElement("body");
-division.textContent.Content
-
-
-const multiplication = document.createElement("button");
-multiplication.textContent.Content = "*";
-body.appendChild(multiplication);
-
-for(let i = 0; i <= 9; i++) {
+for (let i = 0; i <= 9; i++) {
     const button = document.createElement("button");
-    button.textContent=i;
-
+    button.textContent = i;
+  
     body.appendChild(button);
-    body.appendChild(button);
+  
+    button.addEventListener("click", function () {
+      ecran.textContent += String(i);
+    });
+  }
 
-    multiplication.addEventListener("click", function(){
-        screen.textContent = "Well Hello There";
-    })
+const c = document.createElement("button");
+c.textContent = "C";
+body.appendChild(c);
+c.addEventListener("click", function(){
+    screen.textContent = "";
+});
 
+const egal = document.createElement("button");
+egal.textContent = "=";
+body.appendChild(egal);
+egal.addEventListener("click", function(){
+    screen.textContent=eval(screen.textContent);
+});
+
+const operations= ["+","-","*",":"]
+
+for (let i=0; i<= operations.length-1;i++) {
+    const op = document.createElement("button");
+    op.textContent = operations[i];
+    body.appendChild(op);
+    op.addEventListener("click", function () {
+        ecran.textContent += operations[i];
+    });
 }
+
+body.appendChild(screen);
+screen.style.border = "2px solid black";
+screen.style.height = "150px";
+
 
