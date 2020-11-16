@@ -33,7 +33,7 @@ const operations= ["+","-","*",":"]
 for (let i=0; i<= operations.length-1;i++) {
     const ope = document.createElement("button");
     ope.textContent = operations[i];
-    main.appendChild(op);
+    main.appendChild(ope);
     ope.addEventListener("click", function () {
         screen.textContent += operations[i];
     });
