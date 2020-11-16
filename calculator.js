@@ -4,9 +4,13 @@ const screen = document.createElement("div");
 
 // style 
 main.appendChild(screen);
-screen.style.border = "2px solid black";
+screen.style.border = "2px solid #E920AF";
 screen.style.height = "50px";
 screen.style.width = "360px";
+
+// style 2
+let myScreen = document.querySelector("div");
+myScreen.style.backgroundColor = "#F9AFE4";
 
 // numbers & buttons
 for (let i = 0; i <= 9; i++) {
@@ -30,8 +34,10 @@ clear.addEventListener("click", function(){
 const egal = document.createElement("button");
 egal.textContent = "=";
 main.appendChild(egal);
-egal.addEventListener("click", function(){
-    screen.textContent= Function('return' + screen.textContent)(); //eval(screen.textContent);
+egal.addEventListener("click", function egal(String){
+    return Function('return' + String)()
+    //screen.textContent= Function('return' + screen.textContent)(); 
+    //eval(screen.textContent);
 });
 
 //const decimal = document.createElement("button");
