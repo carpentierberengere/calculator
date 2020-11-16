@@ -2,3 +2,13 @@ html{
     background-color: bisque;
 }
 
+div{
+    background-color: lightblue;
+}
+
+button{
+    background-color: lightcyan;
+    border: solid;
+    border-color: lightseagreen;
+    border-radius: 3px;
+}
