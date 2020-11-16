@@ -31,22 +31,28 @@ clear.addEventListener("click", function(){
     screen.textContent = "";
 });
 
+//const egal = document.createElement("button");
+//egal.textContent = "=";
+//main.appendChild(egal);
+//egal.addEventListener("click", function egal(String){
+//    return Function('return' + String)()
+    //screen.textContent= Function('return' + screen.textContent)(); 
+    //eval(screen.textContent);
+//});
+
 const egal = document.createElement("button");
 egal.textContent = "=";
 main.appendChild(egal);
-egal.addEventListener("click", function egal(String){
-    return Function('return' + String)()
-    //screen.textContent= Function('return' + screen.textContent)(); 
-    //eval(screen.textContent);
+egal.addEventListener("click", function (){
+    screen.textContent= eval(screen.textContent);
 });
 
+// Ajout de decimale 
 //const decimal = document.createElement("button");
 //decimal.textContent = ",";
 //main.appendChild(decimal);
 //decimal.addEventListener("click", function(){
 //    screen.textContent = 
-// Ajout de decimale 
-
 
 const operations= ["+","-","*",":"]
 
