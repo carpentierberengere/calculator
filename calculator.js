@@ -2,24 +2,25 @@ const main = document.querySelector("main");
 
 const screen = document.createElement("div");
 
+
 //--------------style--------------------------// 
 main.appendChild(screen);
 screen.style.border = "2px solid #E920AF";
 screen.style.height = "50px";
 screen.style.width = "360px";
-screen.style.display = "flex";
-screen.style.justifyContent = "center";
+//screen.style.display = "flex";
+//screen.style.justifyContent = "center";
 
 //---------------style 2-----------------------//
-let myScreen = document.querySelector("div");
-myScreen.style.backgroundColor = "#F9AFE4";
-myScreen.style.display = "flex";
+//let myScreen = document.querySelector("div");
+//myScreen.style.backgroundColor = "#F9AFE4";
+//myScreen.style.display = "flex";
 
 
-let myButton = document.querySelector("div");
-myButton.style.color = "#411BA6";
-myButton.style.fontFamily = "Helvetica";
-myButton.style.fontSize = "25px";
+//let myButton = document.querySelector("div");
+//myButton.style.color = "#411BA6";
+//myButton.style.fontFamily = "Helvetica";
+//myButton.style.fontSize = "25px";
 
 
 
