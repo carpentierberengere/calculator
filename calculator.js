@@ -1,10 +1,11 @@
-const main = document.querySelector("main");
-
+const body = document.querySelector("body");
+const main = document.createElement("main");
 const screen = document.createElement("div");
+const button = document.createElement("div");
 
 
 //--------------style--------------------------// 
-main.appendChild(screen);
+body.appendChild(screen);
 screen.style.border = "2px solid #E920AF";
 screen.style.height = "50px";
 screen.style.width = "360px";
