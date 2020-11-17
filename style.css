@@ -4,18 +4,30 @@ html{
 }
 
 main{
-    background-color: lightgray;
-    border: solid;
-    border-radius: 5px;
-    border-color: grey;
-    border-width: 1px;
     display: flex;
     align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: 25%;
+    margin-bottom:25%;
+    
 }
 
-div{
-    background-color: lightslategray;
+.calc{
+    display:flex;
+    background-color: darkseagreen;
+    flex-direction: column;
+    border: black;
+
+
+}
+
+
+screen{
+    background-color:#7E897E  ;
+    background-image: linear-gradient(#7E897E ,#A0B6A0  );
     border: solid;
+    border-radius: 5px;
     border-color: black;
     border-radius: 5px;
     border-width: 2px;
@@ -23,13 +35,29 @@ div{
 
 buttons{
     background-color: lightyellow;
-    border: solid;
-    border-width: 1px;
-    border-color: darkgoldenrod;
-    border-radius: 5px;
     text-align: center;
+    height: 60%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+}
+buttons:hover{
+    background-color:#8C8D8C ;
 }
 
-
-
-
+.row1{
+    background-color: #8C8D8C ;
+}
+.row2{
+    background-color: #8C8D8C ;
+}
+.row3{
+    background-color: #8C8D8C ;
+}
+.row4{
+    background-color:#8C8D8C ;
+}
+.row5{
+    background-color: #8C8D8C ;
+}

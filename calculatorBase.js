@@ -4,8 +4,11 @@ main.style.display = "flex";
 main.style.alignItems = "center";
 main.style.width = "50%";
 
-const screen = document.createElement("div");
-screen.style.height = "80px";
+const calc = document.createElement("div");
+calc.className = "calc";
+
+const screen = document.createElement("screen");
+screen.style.height = "100px";
 screen.style.width = "50%";
 screen.style.border = "2px solid black";
 //let myScreen = document.querySelector("div");
@@ -17,31 +20,36 @@ buttons.style.border = "2px solid black";
 buttons.style.display ="flex";
 buttons.style.flexDirection = "column";
 buttons.style.width = "50%";
+buttons.style.height = "200px";
+buttons.style.border = "2px solid black";
 //let myButton = document.querySelector("div");
 //myButton.style.color = "#411BA6";
 //myButton.style.fontFamily = "Helvetica";
 //myButton.style.fontSize = "25px";
 
 const row1 = document.createElement("buttons");
+row1.className = "row1";
 row1.style.display="flex";
 row1.style.justifyContent = "space-between";
 
 const row2 = document.createElement("buttons");
+row2.className = "row2";
 row2.style.display = "flex";
 row2.style.justifyContent = "space-between";
 
 const row3 = document.createElement("buttons");
+row3.className = "row3";
 row3.style.display = "flex";
 row3.style.justifyContent = "space-between";
 
 const row4 = document.createElement("buttons");
+row4.className = "row4";
 row4.style.display="flex";
 row4.style.justifyContent = "space-between";
 
 const row5 = document.createElement("buttons");
+row5.className = "row5";
 row5.style.display = "flex";
-
-
 
 main.appendChild(screen);
 main.appendChild(buttons);
@@ -52,7 +60,7 @@ buttons.appendChild(row4);
 buttons.appendChild(row5);
 
 const oper = [
-   "(", ")", "C", "=", "-", "+", "/", "*", ",","1", "2", "3", "4", "5", "6", "7", "8", "9", "0" 
+   "(", ")", "C", "=", "-", "+", "/", "*", ",","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "%"
 ]
 for (let i = 0; i <= oper.length-1; i++){
     const ope = document.createElement("buttons");
