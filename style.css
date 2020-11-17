@@ -6,9 +6,10 @@ div{
     background-color: lightblue;
 }
 
-button{
+buttons{
     background-color: lightcyan;
     border: solid;
     border-color: lightseagreen;
     border-radius: 3px;
+    display: flex;
 }
