@@ -4,8 +4,6 @@ main.style.display = "flex";
 main.style.alignItems = "center";
 main.style.width = "50%";
 
-const calc = document.createElement("div");
-calc.className = "calc";
 
 const screen = document.createElement("screen");
 screen.style.height = "100px";

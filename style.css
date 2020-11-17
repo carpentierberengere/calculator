@@ -10,18 +10,7 @@ main{
     padding-right: 25%;
     margin-top: 25%;
     margin-bottom:25%;
-    
 }
-
-.calc{
-    display:flex;
-    background-color: darkseagreen;
-    flex-direction: column;
-    border: black;
-
-
-}
-
 
 screen{
     background-color:#7E897E  ;
@@ -31,15 +20,18 @@ screen{
     border-color: black;
     border-radius: 5px;
     border-width: 2px;
+    text-align: right;
+    font-size: 20px;
 }
 
 buttons{
-    background-color: lightyellow;
+    background-color: #CBD4CB  ;
     text-align: center;
     height: 60%;
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    
 
 }
 buttons:hover{
