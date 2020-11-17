@@ -13,6 +13,9 @@ screen.style.border = "2px solid black";
 //myScreen.style.backgroundColor = "#F9AFE4";
 //myScreen.style.display = "flex";
 
+const history = document.createElement("history");
+history.style.border = "1px solid black";
+
 const buttons = document.createElement("buttons");
 buttons.style.border = "2px solid black";
 buttons.style.display ="flex";
@@ -58,7 +61,7 @@ buttons.appendChild(row4);
 buttons.appendChild(row5);
 
 const oper = [
-   "(", ")", "C", "=", "-", "+", "/", "*", ",","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "%"
+   "7","8","9","*","4","5","6","-","1","2","3","+","0",".","/","(",")","%","C","="
 ]
 for (let i = 0; i <= oper.length-1; i++){
     const ope = document.createElement("buttons");
