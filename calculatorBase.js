@@ -12,7 +12,7 @@ screen.style.border = "2px solid black";
 //myScreen.style.backgroundColor = "#F9AFE4";
 //myScreen.style.display = "flex";
 
-const buttons = document.createElement("div");
+const buttons = document.createElement("buttons");
 buttons.style.border = "2px solid black";
 buttons.style.display ="flex";
 buttons.style.flexDirection = "column";
@@ -22,25 +22,26 @@ buttons.style.width = "50%";
 //myButton.style.fontFamily = "Helvetica";
 //myButton.style.fontSize = "25px";
 
-const row1 = document.createElement("div");
+const row1 = document.createElement("buttons");
 row1.style.display="flex";
 row1.style.justifyContent = "space-between";
 
-const row2 = document.createElement("div");
+const row2 = document.createElement("buttons");
 row2.style.display = "flex";
 row2.style.justifyContent = "space-between";
 
-const row3 = document.createElement("div");
+const row3 = document.createElement("buttons");
 row3.style.display = "flex";
 row3.style.justifyContent = "space-between";
 
-const row4 = document.createElement("div");
+const row4 = document.createElement("buttons");
 row4.style.display="flex";
 row4.style.justifyContent = "space-between";
 
-const row5 = document.createElement("div");
+const row5 = document.createElement("buttons");
 row5.style.display = "flex";
-row5.style.justifyContent = "space-between";
+
+
 
 main.appendChild(screen);
 main.appendChild(buttons);
@@ -51,7 +52,7 @@ buttons.appendChild(row4);
 buttons.appendChild(row5);
 
 const oper = [
-    "C", "=", "-", "+", "/", "*", ",","1", "2", "3", "4", "5", "6", "7", "8", "9", "0" 
+   "(", ")", "C", "=", "-", "+", "/", "*", ",","1", "2", "3", "4", "5", "6", "7", "8", "9", "0" 
 ]
 for (let i = 0; i <= oper.length-1; i++){
     const ope = document.createElement("buttons");
