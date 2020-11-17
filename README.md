@@ -10,7 +10,7 @@ We were asked to create a functionning calculator using only Javascript to style
 
 # What did we do ?
 
-We created a new [**repository**](https://github.com/carpentierberengere/calculator), with an HTML file as well as a JavaScript file inside. The index could only contain the usual squeletton and a <main> tag inside the <body> tag, linking the index with the JS script and from there creating a calculator. 
+We created a new [**repository**](https://github.com/carpentierberengere/calculator), with an HTML file as well as a JavaScript file inside. The index could only contain the usual squeletton and a **main** tag inside the **body** tag, linking the index with the JS script and from there creating a calculator. 
 
 # What did we use ? 
 
