@@ -5,6 +5,7 @@ main.style.display = "flex";
 main.style.alignItems = "center";
 main.style.width = "50%";
 
+
 //-------------SCREEN-------------------//
 const screen = document.createElement("screen");
 screen.style.height = "100px";
@@ -13,6 +14,8 @@ screen.style.border = "2px solid black";
 //let myScreen = document.querySelector("div");
 //myScreen.style.backgroundColor = "#F9AFE4";
 //myScreen.style.display = "flex";
+
+
 
 //--------------BUTTONS--------------------//
 const buttons = document.createElement("buttons");
@@ -51,6 +54,11 @@ const row5 = document.createElement("buttons");
 row5.className = "row5";
 row5.style.display = "flex";
 
+//------------HISTORY-------------------//
+//const history = document.createElement("history");
+//history.style.display = "flex";
+//history.style.border = "1px solid black";
+
 
 main.appendChild(screen);
 main.appendChild(buttons);
@@ -59,12 +67,13 @@ buttons.appendChild(row2);
 buttons.appendChild(row3);
 buttons.appendChild(row4);
 buttons.appendChild(row5);
+//history.appendChild(history);
 
 
 //------------------CALCUL BASE------------------//
 
 const oper = [
-   "7","8","9","*","4","5","6","-","1","2","3","+","0",".","/","(",")","%","C","="
+   "7","8","9","*","4","5","6","-","1","2","3","+","0","(",")","/","C","%",".","="
 ]
 for (let i = 0; i <= oper.length-1; i++){
     const ope = document.createElement("buttons");
