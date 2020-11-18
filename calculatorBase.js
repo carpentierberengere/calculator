@@ -1,9 +1,11 @@
+//----------MAIN------------------------//
 const main = document.querySelector("main");
 main.style.flexDirection = "column";
 main.style.display = "flex";
 main.style.alignItems = "center";
 main.style.width = "50%";
 
+//-------------SCREEN-------------------//
 const screen = document.createElement("screen");
 screen.style.height = "100px";
 screen.style.width = "50%";
@@ -12,6 +14,7 @@ screen.style.border = "2px solid black";
 //myScreen.style.backgroundColor = "#F9AFE4";
 //myScreen.style.display = "flex";
 
+//--------------BUTTONS--------------------//
 const buttons = document.createElement("buttons");
 buttons.style.border = "2px solid black";
 buttons.style.display ="flex";
@@ -56,6 +59,9 @@ buttons.appendChild(row2);
 buttons.appendChild(row3);
 buttons.appendChild(row4);
 buttons.appendChild(row5);
+
+
+//------------------CALCUL BASE------------------//
 
 const oper = [
    "7","8","9","*","4","5","6","-","1","2","3","+","0",".","/","(",")","%","C","="
