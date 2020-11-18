@@ -20,4 +20,4 @@ We created a new [**repository**](https://github.com/carpentierberengere/calcula
 
 # Preview
 
-***work in progress***
+![Preview](./preview.png)
