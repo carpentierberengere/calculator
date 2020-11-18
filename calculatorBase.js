@@ -97,6 +97,22 @@ for (let i = 0; i <= oper.length-1; i++){
             });
             break;
 
+        case "%":
+                ope.addEventListener("click", function (){
+                    screen.textContent = screen.textContent/100;
+                    screen.textContent += "%";
+                })
+                break;
+
+        case "+":
+            ope.addEventListener("click", function (){
+                if (screen.textContent.slice(-1)=="+"){
+                    screen.textContent += "";
+                }else{
+                    screen.textContent += "+";
+                }
+            })
+
         case "=":
             ope.addEventListener("click", function (){
                 screen.textContent= eval(screen.textContent);
@@ -114,6 +130,8 @@ for (let i = 0; i <= oper.length-1; i++){
             ope.addEventListener("click", function (){
                 screen.textContent="";
             });
+
+       
         //const clear = document.createElement("button");
         //clear.textContent = "C";
         //main.appendChild(clear);
