@@ -2,7 +2,7 @@
 
 Made by [**Bérengère Carpentier**](https://github.com/carpentierberengere):school_satchel:
 
-Project begun on the *16th of November* and has to be finished on the *18th of November*.
+Project began on the *16th of November* and finished on the *18th of November*.
 
 # What was asked ? 
 
@@ -24,4 +24,4 @@ We created a new [**repository**](https://github.com/carpentierberengere/calcula
 
 # Link to GitHub Page
 
-Want to test it ? Here you go :point_right: click on the [**link**](https://carpentierberengere.github.io/calculator/) ! 
+Want to test it ? Here you go :point_right:  click on the [**link**](https://carpentierberengere.github.io/calculator/) ! 
