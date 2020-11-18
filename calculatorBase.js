@@ -112,6 +112,47 @@ for (let i = 0; i <= oper.length-1; i++){
                     screen.textContent += "+";
                 }
             })
+            break;
+
+        case "-":
+            ope.addEventListener("click", function(){
+                if (screen.textContent.slice(-1)=="-"){
+                    screen.textContent += "";
+                }else{
+                    screen.textContent += "-";
+                }
+            })
+            break;
+
+        case "*":
+                ope.addEventListener("click", function(){
+                    if (screen.textContent.slice(-1)=="*"){
+                        screen.textContent += "";
+                    }else{
+                        screen.textContent += "*";
+                    }
+                })
+                break;
+
+            case "/":
+                    ope.addEventListener("click", function(){
+                        if (screen.textContent.slice(-1)=="/"){
+                            screen.textContent += "";
+                        }else{
+                            screen.textContent += "/";
+                        }
+                    })
+                    break;
+
+            case "%":
+                    ope.addEventListener("click", function(){
+                            if (screen.textContent.slice(-1)=="%"){
+                                screen.textContent += "";
+                            }else{
+                                screen.textContent += "%";
+                            }
+                        })
+                        break;
 
         case "=":
             ope.addEventListener("click", function (){
@@ -156,3 +197,5 @@ for (let i = 0; i <= oper.length-1; i++){
 
     
 };
+
+
