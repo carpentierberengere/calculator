@@ -4,7 +4,6 @@ main.style.display = "flex";
 main.style.alignItems = "center";
 main.style.width = "50%";
 
-
 const screen = document.createElement("screen");
 screen.style.height = "100px";
 screen.style.width = "50%";
@@ -12,9 +11,6 @@ screen.style.border = "2px solid black";
 //let myScreen = document.querySelector("div");
 //myScreen.style.backgroundColor = "#F9AFE4";
 //myScreen.style.display = "flex";
-
-const history = document.createElement("history");
-history.style.border = "1px solid black";
 
 const buttons = document.createElement("buttons");
 buttons.style.border = "2px solid black";
@@ -52,6 +48,7 @@ const row5 = document.createElement("buttons");
 row5.className = "row5";
 row5.style.display = "flex";
 
+
 main.appendChild(screen);
 main.appendChild(buttons);
 buttons.appendChild(row1);
@@ -77,8 +74,22 @@ for (let i = 0; i <= oper.length-1; i++){
     //button.addEventListener("click", function () {
     //  screen.textContent += String(i);
 
+    function safeEval (str){
+        return Function('return'+str)()
+    }
+
     let cases = oper[i];
     switch(cases){
+
+        case ".":
+            ope.addEventListener("click", function(){
+                if (screen.textContent.slice(-1)=="."){
+                    screen.textContent += "";
+                }else{
+                    screen.textContent += ".";
+                }
+            })
+            break;
 
         default:
             ope.addEventListener("click", function (){
@@ -88,7 +99,9 @@ for (let i = 0; i <= oper.length-1; i++){
 
         case "=":
             ope.addEventListener("click", function (){
-                screen.textContent = eval(screen.textContent);
+                screen.textContent= eval(screen.textContent);
+        
+                //safeEval(String(result.textContent));
             })
             break;
             //const egal = document.createElement("button");
