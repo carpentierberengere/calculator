@@ -21,3 +21,7 @@ We created a new [**repository**](https://github.com/carpentierberengere/calcula
 # Preview
 
 ![Preview](./preview.png)
+
+# Link to GitHub Page
+
+Want to test it ? Here you go :point_right: click on the [**link**](https://carpentierberengere.github.io/calculator/) ! 
